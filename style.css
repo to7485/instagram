@@ -1,0 +1,13 @@
+h2{
+    color : red;
+}
+/*클래스 선택자를 쓸 때는 .클래스값으로 써야한다.*/
+.highlight{
+    border : solid;
+}
+
+/*아이디 선택자를 쓸 때는 #아이디값으로 써야한다.*/
+#profile{
+    border : solid;
+    border-color : blue;
+}
