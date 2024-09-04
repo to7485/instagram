@@ -10,7 +10,9 @@
         <img src="image/instagramlogo.png" width="150px">
         <input type="search" value="검색">
         <div id="profile">
-            <img src="image/profile.jpg" width="50px">
+            <div id="profile_pic">
+                <img src="image/profile.jpg" class="circle_pic">
+            </div>
             <!-- <br>태그는 줄바꿈 기능이 있다.-->
             <!-- <p>태그는 문단을 나누는 태그 paragraph의 약자이다.
                 p태그는 줄바꿈을 표현하는 block이라는 속성이 있기 때문에
@@ -41,8 +43,8 @@
         <div>
             <!-- 높이 35px로 하이라이트 이미지 2개 넣기-->
             <div class="highlight">
-                <div>
-                    <img src="image/hl 1.jpg" height="35px">
+                <div class="highlight_pic">
+                    <img src="image/hl 1.jpg" class="circle_pic">
                 </div>
                 <div>
                     <!-- window + ; -->
@@ -50,8 +52,8 @@
                 </div>
             </div>
             <div class="highlight">
-                <div>
-                    <img src="image/hl 2.jpg" height="35px">
+                <div class="highlight_pic">
+                    <img src="image/hl 2.jpg" class="circle_pic">
                 </div>
                 <div>
                     <!-- window + ; -->
@@ -59,39 +61,37 @@
                 </div>
             </div>
         </div>
-        <div>
-            <p>
-                <div>
-                    게시물<br/>
-                    133
-                </div>
-                <div>
-                    팔로워<br/>
-                    408
-                </div>
-                <div>
-                    팔로우<br/>
-                    189
-                </div>
-            </p>
+        <div id="stat_bar">
+            <div class="stat">
+                게시물<br/>
+                133
+            </div>
+            <div class="stat">
+                팔로워<br/>
+                408
+            </div>
+            <div class="stat">
+                팔로우<br/>
+                189
+            </div>
         </div>
         <div>아이콘이 들어갈 자리</div>
         <div>
-            <!-- 퍼센트(%)로 지정된 값은 화면 크기에 따라
-            이미지의 크기가 바뀐다.
-            이처럼 창 크기의 변화에 맞춰 화면의 정보나 사진의 크기가
-            바뀌는 웹 페이지를 반응형 웹이라고 한다.
-            모든 웹 페이지 외주 제작에서 반응형 웹이 가장 비산 가격으로
-            거래되고 있다. 가장 수요가 높고 난이도가 높기 때문이다.-->
-            <img src="image/thumbnails/1.jpg" width="32%">
-            <img src="image/thumbnails/2.jpg" width="32%">
-            <img src="image/thumbnails/3.jpg" width="32%">
-            <img src="image/thumbnails/4.jpg" width="32%">
-            <img src="image/thumbnails/5.jpg" width="32%">
-            <img src="image/thumbnails/6.jpg" width="32%">
-            <img src="image/thumbnails/7.jpg" width="32%">
-            <img src="image/thumbnails/8.jpg" width="32%">
-            <img src="image/thumbnails/9.jpg" width="32%">
+            <div class="thumbnail_grid">
+                <img src="image/thumbnails/1.jpg" class="thumbnail">
+                <img src="image/thumbnails/2.jpg" class="thumbnail">
+                <img src="image/thumbnails/3.jpg" class="thumbnail">
+            </div>
+            <div class="thumbnail_grid">
+                <img src="image/thumbnails/4.jpg" class="thumbnail">
+                <img src="image/thumbnails/5.jpg" class="thumbnail">
+                <img src="image/thumbnails/6.jpg" class="thumbnail">
+            </div>
+            <div class="thumbnail_grid">
+                <img src="image/thumbnails/7.jpg" class="thumbnail">
+                <img src="image/thumbnails/8.jpg" class="thumbnail">
+                <img src="image/thumbnails/9.jpg" class="thumbnail">
+            </div>
         </div>
     </body>
 </html>
