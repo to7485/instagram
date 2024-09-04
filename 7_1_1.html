@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* 모든 h1태그에 적용 */
+        /* h1{color:red;} */
+
+        /* header id값을 가진 태그 밑에 있는 모든 h1태그 */
+        /* #header h1{color : red;} */
+
+        /* header id값을 가진 태그 바로 밑에있는 h1태그만 적용 */
+        #header>h1{color : red;}
+        
+        #contents h1{color: blue;}
+    </style>
+        <div id="header">
+            <h1>나는 Header의 자식</h1> <!--직계 자식-->
+            <div id="nav">
+                <h1>navigation</h1> <!-- 후손 -->
+            </div>
+
+            <div id="nav2">
+                <h1>navigation</h1>
+            </div>
+        </div>
+
+        <div id="contents">
+                <h1>contents의자식</h1>
+        </div>
+        
+</body>
+</html>
