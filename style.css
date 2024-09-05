@@ -1,17 +1,43 @@
+/* 아이디 */
 h2{
     color : red;
 }
 /*클래스 선택자를 쓸 때는 .클래스값으로 써야한다.*/
+/* 하이라이트 */
 .highlight{
-    border : solid;
+    text-align:center;
 }
 
 /*아이디 선택자를 쓸 때는 #아이디값으로 써야한다.*/
+/* 프로필 */
 #profile{
-    border : solid;
-    border-color : blue;
+    display:grid;
+    grid-template-columns : 1fr 3.5fr;
 }
 
+#profile_info{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+
+    height:50px;
+}
+
+#id{
+    font-size:18px;
+    font-weight:100;
+}
+
+button{
+    height : 80%;
+    width : 95;
+
+    font-size : 10px;
+    background-color : white;
+    border : 1px solid gray;
+    border-radius: 3px;
+}
+
+/* -----썸네일------ */
 .thumbnail_grid{
     display : grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -20,7 +46,9 @@ h2{
 .thumbnail{
     width:100%;
 }
+/* ----------------- */
 
+/* 게시물,팔로워,팔로우 */
 #stat_bar{
     display:grid;
     grid-template-columns : 1fr 1fr 1fr;
@@ -35,7 +63,9 @@ h2{
 .stat{
     text-align:center;
 }
+/* ----------------- */
 
+/* 사진 동그랗게 만들기 */
 .circle_pic{
     border : solid white 1px;
     border-radius: 50%;
@@ -53,4 +83,77 @@ h2{
 .highlight_pic{
     width:35px;
     height:35px;
+
+    margin-left : auto;
+    margin-right : auto;
+}
+/* ----------------- */
+
+
+#highlight_area{
+    display:grid;
+    grid-template-columns:45px 45px 1fr;
+}
+
+#top{
+    display:grid;
+    grid-template-columns: 4fr 7fr 4fr;
+    border-bottom : solid gray 0.1px;
+    padding-bottom : 3px;
+    margin-bottom : 10px;
+    height:30px;
+}
+
+#top_img{
+    width:100px;
+    height:30px;
+    margin : auto;
+}
+
+#top img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+#top input{
+    height: 60%;
+    width: 95%;
+
+    margin : auto;
+
+    text-align:center;
+    background-color : rgb(250,250,250);
+    border : solid gray 1px;
+    border-radius: 3px;
+
+    font-size : 10px;
+    font-weight: 100;
+}
+
+i{
+    color:gray;
+}
+
+#top i{
+    font-size : 14px;
+}
+
+#top div{
+    text-align:center;
+    padding-top : 1px;
+}
+
+#sub_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    font-size : 15px;
+
+    height : 30px;
+}
+
+.selected{
+    border-bottom : solid gray 3px;
 }
