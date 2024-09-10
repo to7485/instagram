@@ -1,3 +1,6 @@
+//document : 웹 문서를 지칭하는 자바스크립트 객체
+//"DOMContentLoaded" : HTML코드가 다 로딩될 때 이벤트를 발생
+//Document Object Model
 document.addEventListener("DOMContentLoaded",function(e){
     let configID = document.querySelector("#id i");
     let idText = document.querySelector("#id span");
@@ -71,7 +74,7 @@ document.addEventListener("DOMContentLoaded",function(e){
     })
 
     profile_pic.addEventListener("click", function(e){
-        profile_pic.setAttribute("src",prompt("이미지 url을 입력해주세요"))
+        profile_pic.setAttribute("src",prompt("이미지 url을 입력해주세요 "))
 
     })
     
